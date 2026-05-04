@@ -1,0 +1,59 @@
+.field {
+    display: grid;
+    gap: 8px;
+  }
+  
+  .label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #4b3039;
+  }
+  
+  .datePickerWrapper {
+    width: 100%;
+    display: block;
+  }
+  
+  .datePickerWrapper :global(.react-datepicker__input-container) {
+    width: 100%;
+    display: block;
+  }
+  
+  .input {
+    width: 100%;
+    height: 56px;
+    border-radius: 16px;
+    padding: 0 16px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 800;
+    color: #31202a;
+    background:
+      linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(135deg, rgba(201, 24, 69, .22), rgba(199, 150, 62, .18)) border-box;
+    border: 1px solid transparent;
+    box-shadow: 0 10px 24px rgba(85, 36, 49, .055);
+  }
+  
+  .input:focus {
+    box-shadow:
+      0 0 0 4px rgba(201, 24, 69, .11),
+      0 12px 28px rgba(85, 36, 49, .08);
+  }
+  
+  .error {
+    font-size: 13px;
+    font-weight: 800;
+    color: #c91845;
+  }
+  
+  .calendar {
+    border: 0 !important;
+    border-radius: 20px !important;
+    overflow: hidden;
+    box-shadow: 0 24px 70px rgba(37, 20, 26, .22) !important;
+    font-family: inherit !important;
+  }
